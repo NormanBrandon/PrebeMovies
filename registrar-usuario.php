@@ -1,13 +1,13 @@
 <?php
 
- $host_db = "localhost";
- $user_db = "root";
- $pass_db = "Conan@1234";
- $db_name = "registration";
- $tbl_name = "users";
- 
+	 $host_db = "localhost";
+	 $user_db = "root";
+	 $pass_db = "Conan@1234";
+	 $db_name = "registration";
+	 $tbl_name = "users";
+	 
 
- $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+	 $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
  $form_pass = $_POST['password'];
  $correo = $_POST['mail'];
  $hash = md5($form_pass); 

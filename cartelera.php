@@ -15,7 +15,7 @@ session_start();
 		<div class="grid-nav">
 			<div class="negro"></div>
 			<div class="negro"><a href="index.html"><h3 align="center">Inicio</h3></a></div>
-			<div class="negro"><a href="estrenos.html "><h3 align="center">Proximos Estrenos</h3></a></div>
+			<!-- <div class="negro"><a href="estrenos.html "><h3 align="center">Proximos Estrenos</h3></a></div> -->
 			<div class="negro"><a href="sucursales.html"><h3 align="center">Sucursales</h3></a></div>
 			<div class="negro" align="center"></div>
 			<div class="especial fuente4"><h1 align="center">Culto<span>Cinema</span></h1></div>
@@ -64,24 +64,41 @@ session_start();
 		<?php endfor;?>
 
 
-		
+	<?php else :?>
+<br>
+<br>
+<br>
+	<h1 class="fuente1" style="color: white;" align="center">Registrate e Ingresa Antes de Ver nuestro contenido</h1>
+	<br>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 	<?php endif ?>
+	
+
 
 </section>
 
 
 
-<br>
-<br>
-<br>
 
 
 
-
-</body>
 <footer class="negro pie">
 	<div>© Copyright,RJ45 Comunicación Entertainment/Movies</div>
 	<div>Siguenos en Twiter</div>	
@@ -91,4 +108,6 @@ session_start();
 	<div>+5520129071</div>
 
 </footer>
+</body>
+
 </html>
