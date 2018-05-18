@@ -1,4 +1,6 @@
-
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,6 @@
 	<title>PrebeMovies</title>
 </head>
 <body class="cuerpo">
-<form action="checklogin.php" method="post" >
 
 	<section>
 		<div class="grid-nav">
@@ -28,27 +29,58 @@
 	<section>
 
 		<div class="separa"></div>
+		<?php  if (isset($_SESSION['username'])) : ?>
+			<p><h1 style="color: white; text-align: center; font-size: 35px">Bienvenido <strong><?php echo $_SESSION['username']; ?></strong></h1></p>
+			<p> <a href="logout.php" style="color: white;">Cerrar Sesion</a> </p>
+			<?php  
+			$host_db = "localhost";
+			$user_db = "root";
+			$pass_db = "Conan@1234";
+			$db_name = "registration";
+			$tbl_name = "cartelera";
+			$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+			if ($conexion->connect_error) {
+				die("La conexion falló: " . $conexion->connect_error);
+			}
+			
 
-		<div class="titulo">
-			<div></div>
-			<div class="fuente4" align="center"><h1>Iniciar Sesión</h1></div>
-			<div></div>
-		</div>
+			?>
+			<?php
+			for ($i = 0; $i <10; $i++) :
+				$sql="SELECT * FROM $tbl_name WHERE id =100$i";
+			$result = $conexion->query($sql);
+			$row = $result->fetch_array(MYSQLI_ASSOC);
+			?>
+			<div class="pelicula" >
+				<div></div>
+				<div class="item2"><img width="100%" src="<?php echo $row['foto'] ?>"></div>
+				<div></div>
+				<div class="item3 fuente5"><h4><?php echo $row['nombre'] ?></h4> <h4><?php echo $row['hora'] ?><h4><?php echo $row['descripcion'] ?></h4></h4></div>
+				
+				<div class="item5 fuente5"></div>		
+			</div>
 
-	</section>
-	<div class="header">
-			<div class="fuente1">Culto<span>Cinema</span></div>
-		</div>
-	<form name="login">
-		<div class="login">
-			<input name="username" placeholder="Usuario" type="text" id="username" required>
-			<input name="password" placeholder="Contraseña" type="password" id="password" required>
+		<div class="separa"></div>
+		<?php endfor;?>
+
+
+		
+
+
+
+	<?php endif ?>
+
+</section>
+
+
+
 <br>
-			<input type="submit" name="Submit" value="LOGIN">
-			<br><span style="color:white font-size:10px"><a href="registrarse.html">Registrarse</a></span>
-		</div>
-	</form>
-<script type="text/javascript" src="js/app.js"></script>
+<br>
+<br>
+
+
+
+
 </body>
 <footer class="negro pie">
 	<div>© Copyright,RJ45 Comunicación Entertainment/Movies</div>

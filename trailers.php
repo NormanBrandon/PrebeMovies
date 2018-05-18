@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Pacifico|Skranji" rel="stylesheet">
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>PrebeMovies</title>
 </head>
 <body class="cuerpo">
-<form action="checklogin.php" method="post" >
-
-	<section>
+<section>
 		<div class="grid-nav">
 			<div class="negro"></div>
 			<div class="negro"><a href="index.html"><h3 align="center">Inicio</h3></a></div>
@@ -23,22 +22,9 @@
 			<div class="negro"></div>
 		</div>
 	</section>
-	<section>
+<div class="separa"></div>
+<div class="separa"></div>
 
-		<div class="separa"></div>
-
-		<div class="titulo">
-			<div></div>
-			<div class="fuente4" align="center"><h1>Iniciar Sesión</h1></div>
-			<div></div>
-		</div>
-
-	</section>
-	
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.6755045384994!2d-99.13842793553374!3d19.3831983472822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe570c24c791%3A0x12e0e8eae6acd634!2sCol.+Del+Carmen%2C+Nativitas%2C+03500+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1526619191206" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>	
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.1984122067342!2d-99.16693728553409!3d19.360559647998205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc0bdd5331d%3A0x96e188ebb2ad7d82!2sCineteca+Nacional!5e0!3m2!1ses!2smx!4v1526622818524" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-<script type="text/javascript" src="js/app.js"></script>
 </body>
 <footer class="negro pie">
 	<div>© Copyright,RJ45 Comunicación Entertainment/Movies</div>
